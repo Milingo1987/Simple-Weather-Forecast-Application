@@ -1,0 +1,48 @@
+<html lang="en-us" ng-app="weatherApp">
+    <head>
+        <title>Applicazione test Angular</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+                <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em;
+            }
+        </style>
+        
+        <!-- load angular via CDN -->
+<script src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.16/angular-route.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.16/angular-resource.min.js"></script>
+
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" style="margin-bottom:12px;" href="/">Simple Weather <br>Forecast Application</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/home"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/forecast/0">Forecast</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+<div ng-view></div>
+
+		</div>
+
+        
+        
+         </body>
+</html>
